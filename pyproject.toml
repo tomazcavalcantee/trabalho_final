@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "traffic-wavenet"
+version = "0.1.0"
+description = "Graph WaveNet implementation for traffic forecasting on METR-LA and PEMS-BAY"
+authors = [
+    { name = "Tomaz de Lucena Cavalcante" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+    "scikit-learn>=1.2.0",
+    "h5py>=3.8.0",
+    "tables>=3.8.0",
+    "matplotlib>=3.7.0",
+    "tensorboard>=2.13.0",
+    "tqdm>=4.65.0",
+    # Abstract dependencies for the package. 
+    # The strict CUDA pinning remains in your requirements.txt
+    "torch>=2.0.0",
+    "torchvision>=0.15.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.1.0",
+    "jupyter>=1.0.0"
+]
