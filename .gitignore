@@ -1,0 +1,25 @@
+# Virtual Environments
+env/
+venv/
+.venv/
+
+# Build Metadata
+*.egg-info/
+build/
+dist/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*~
+
+# Datasets and Checkpoints (Never commit large H5 or PKL files)
+data/
+*.h5
+*.pkl
+*.pt
+*.pth
+
+# IDE and OS files
+.vscode/
+.DS_Store
